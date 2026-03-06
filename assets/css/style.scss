@@ -119,7 +119,7 @@ main {
   padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; transition: opacity 0.2s; text-decoration: none; display: inline-block;
 }
 .btn:hover { opacity: 0.8; text-decoration: none; }
-.btn-blue { background-color: var(--btn-blue); color: var(--btn-blue-text) !important; border: none; }
+.btn-green { background-color: var(--btn-green); color: var(--btn-blue-text) !important; border: none; }
 .btn-outline { background-color: var(--btn-outline); color: var(--btn-outline-text) !important; border: 1px solid var(--btn-outline-border); }
 
 /* Page Layouts */
