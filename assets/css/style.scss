@@ -164,11 +164,15 @@ nav {
 .form-group { margin-bottom: 1rem; }
 .form-group label { display: block; margin-bottom: 0.5rem; font-weight: bold; }
 .form-group input, .form-group textarea {
-  width: 100%; padding: 0.8rem; border: 1px solid var(--border-color);
-  border-radius: 4px; background-color: var(--bg-color); color: var(--text-color);
+  width: 100%; 
+  padding: 0.8rem; 
+  border: 1px solid var(--bubble-border); /* Swapped to match the bubble outline */
+  border-radius: 8px; /* Slightly rounder to match the bubbles */
+  background-color: var(--bubble-bg); /* Swapped to match the bubble interior */
+  color: var(--text-color);
   font-family: inherit;
+  box-sizing: border-box; /* Ensures padding doesn't push the boxes past 100% width */
 }
-.form-group textarea { resize: vertical; min-height: 120px; }
 
 @media (max-width: 768px) {
   .two-column { grid-template-columns: 1fr; }
