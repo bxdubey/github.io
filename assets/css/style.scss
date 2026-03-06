@@ -113,17 +113,16 @@ nav {
 .hero-subtitle { font-size: 1.1rem; opacity: 0.8; margin-bottom: 1.5rem; }
 
 .pill {
-  display: inline-block;        /* This ensures the background and border actually wrap the text */
-  background-color: var(--bubble-bg);
+  display: inline-flex;         /* Keeps them as boxes */
+  align-items: center;
+  background-color: var(--bubble-bg); /* White in Light Mode */
   color: var(--text-color);
-  border: 1px solid var(--bubble-border);
-  padding: 0.3rem 0.8rem;       /* Vertical and horizontal padding */
-  border-radius: 50px;          /* Makes them pill-shaped */
-  margin: 0.3rem;               /* Space between pills */
+  border: 1px solid var(--bubble-border); /* Black Outline */
+  padding: 0.2rem 0.7rem;
+  border-radius: 20px;
+  margin: 0.2rem;
   font-size: 0.85rem;
   font-weight: 500;
-  line-height: 1.4;             /* Keeps the text vertically centered */
-  white-space: nowrap;          /* Prevents a pill from breaking across two lines */
 }
 
 .buttons { display: flex; justify-content: center; gap: 1rem; }
