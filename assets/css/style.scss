@@ -285,3 +285,17 @@ nav {
 @media (max-width: 768px) {
   .footer-content { flex-direction: column; gap: 1.5rem; }
 }
+
+/* Academic Page Layout */
+.academic-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* 1/3 width for the left, 2/3 width for the right */
+  gap: 2rem;
+  align-items: start; /* Prevents bubbles from stretching vertically if one side is longer */
+}
+
+@media (max-width: 768px) {
+  .academic-layout {
+    grid-template-columns: 1fr; /* Stacks them on top of each other on mobile phones */
+  }
+}
