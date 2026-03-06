@@ -112,15 +112,12 @@ nav {
 .hero h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; }
 .hero-subtitle { font-size: 1.1rem; opacity: 0.8; margin-bottom: 1.5rem; }
 
-.pill {
-  display: inline-flex;         /* Keeps them as boxes */
-  align-items: center;
-  background-color: var(--bubble-bg); /* White in Light Mode */
-  color: var(--text-color);
-  border: 1px solid var(--bubble-border); /* Black Outline */
-  padding: 0.2rem 0.7rem;
+.pills { display: flex; justify-content: center; gap: 0.8rem; margin-bottom: 2rem; flex-wrap: wrap; }
+.pills span {
+  background-color: var(--pill-bg);
+  color: var(--pill-text);
+  padding: 6px 14px;
   border-radius: 20px;
-  margin: 0.2rem;
   font-size: 0.85rem;
   font-weight: 500;
 }
