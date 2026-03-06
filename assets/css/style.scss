@@ -299,3 +299,17 @@ nav {
     grid-template-columns: 1fr; /* Stacks them on top of each other on mobile phones */
   }
 }
+
+/* Extracurricular 3-Column Layout */
+.three-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .three-column {
+    grid-template-columns: 1fr; /* Stacks them on smaller screens */
+  }
+}
