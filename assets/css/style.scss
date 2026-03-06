@@ -5,7 +5,7 @@
   --bg-color: #e6e6e6; /* Slightly darker D'Angelo grey */
   --text-color: #1a1a1a;
   --nav-bg: #ffffff;
-  --border-color: #eaeaea;
+  --border-color: #000000;
   --pill-bg: #f4f4f4; /* Darkened the pills slightly to contrast the new background */
   --pill-text: #333;
   --btn-blue: #004e38; /* Official W&M Green */
@@ -14,6 +14,8 @@
   --btn-outline-text: #333;
   --btn-outline-border: #ccc;
   --link-color: #115740; /* Official W&M Green */
+  --bubble-bg: #ffffff;
+  --bubble-border: #000000;
 }
 
 [data-theme="dark"] {
