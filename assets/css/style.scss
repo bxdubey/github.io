@@ -8,7 +8,7 @@
   --border-color: #eaeaea;
   --pill-bg: #f4f4f4; /* Darkened the pills slightly to contrast the new background */
   --pill-text: #333;
-  --btn-green: #004e38; /* Official W&M Green */
+  --btn-blue: #004e38; /* Official W&M Green */
   --btn-blue-text: #ffffff;
   --btn-outline: transparent;
   --btn-outline-text: #333;
@@ -119,7 +119,7 @@ main {
   padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; transition: opacity 0.2s; text-decoration: none; display: inline-block;
 }
 .btn:hover { opacity: 0.8; text-decoration: none; }
-.btn-green { background-color: var(--btn-green); color: var(--btn-blue-text) !important; border: none; }
+.btn-blue { background-color: var(--btn-blue); color: var(--btn-blue-text) !important; border: none; }
 .btn-outline { background-color: var(--btn-outline); color: var(--btn-outline-text) !important; border: 1px solid var(--btn-outline-border); }
 
 /* Page Layouts */
