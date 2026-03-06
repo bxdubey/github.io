@@ -166,12 +166,18 @@ nav {
 .form-group input, .form-group textarea {
   width: 100%; 
   padding: 0.8rem; 
-  border: 1px solid var(--bubble-border); /* Swapped to match the bubble outline */
-  border-radius: 8px; /* Slightly rounder to match the bubbles */
-  background-color: var(--bubble-bg); /* Swapped to match the bubble interior */
-  color: var(--text-color);
+  border: 1px solid var(--bubble-border) !important;
+  border-radius: 8px !important;
+  background-color: var(--bubble-bg) !important;
+  color: var(--text-color) !important;
   font-family: inherit;
-  box-sizing: border-box; /* Ensures padding doesn't push the boxes past 100% width */
+  box-sizing: border-box;
+  outline: none; /* Removes the default blue glow when clicking inside the box */
+}
+
+/* Optional: Adds a nice dark border when you click to type */
+.form-group input:focus, .form-group textarea:focus {
+  border: 2px solid var(--text-color) !important;
 }
 
 @media (max-width: 768px) {
