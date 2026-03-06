@@ -222,24 +222,25 @@ nav {
   margin-top: 0; /* This removes the extra browser gap! */
 }
 
-/* Footer Styles - Edge-to-Edge Divider & Compact Spacing */
 .site-footer {
   display: flex;
-  justify-content: center; /* Centers the inner content */
-  padding: 1.5rem 0; /* Shrinks gap under divider and above bottom of page */
+  justify-content: center; 
+  gap: 2rem; /* Reduced from 3rem to 2rem to bring elements closer together */
+  padding: 1.5rem 0;
   border-top: 1px solid var(--border-color);
   background-color: var(--bg-color);
   width: 100%;
   box-sizing: border-box;
 }
 
-/* Inner container to keep text aligned with your main content */
+/* If you are using the inner wrapper, adjust this instead: */
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Changed from space-between to center to pull them in */
+  gap: 4rem;              /* Adjust this number (e.g., 2rem, 3rem) until it looks perfect */
   width: 100%;
-  max-width: 900px; /* Keeps content aligned with the rest of your site */
-  padding: 0 1rem;
+  max-width: 900px; 
+  margin: 0 auto;
 }
 
 .footer-left { display: flex; gap: 0.8rem; align-items: center; }
@@ -253,7 +254,11 @@ nav {
   margin-top: 0; margin-bottom: 0.5rem; font-size: 0.75rem; letter-spacing: 1px; opacity: 0.8;
 }
 
-.explore-grid { display: grid; grid-template-columns: auto auto; gap: 0.2rem 1.5rem; }
+.explore-grid { 
+  display: grid; 
+  grid-template-columns: auto auto; 
+  gap: 0.2rem 1.5rem; /* Lowering 1.5rem will bring the two columns of links closer */
+}
 .explore-grid a { color: var(--text-color); opacity: 0.7; font-weight: 500; font-size: 0.8rem;}
 .explore-grid a:hover { opacity: 1; text-decoration: underline; }
 
